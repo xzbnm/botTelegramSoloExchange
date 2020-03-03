@@ -2,11 +2,9 @@
   include_once 'lib/binance.php';
     include_once 'lib/Telegram.php';
     include_once 'jdf.php';
-// 1345678516 robot hamidreza.dehghan
-
 function sendMessages($chatID ,$text ,$key){
     
-  $token='1060705772:AAHSpDm0SZf39bO0neRN1WYoY1DXQaySJuU';
+  $token='?';
     
      $url = 'https://api.telegram.org/bot'.$token.'/sendMessage?chat_id='.$chatID.'&text='.urlencode($text);
      file_get_contents($url);
