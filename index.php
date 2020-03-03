@@ -2,12 +2,10 @@
   include_once 'calc.php';
   include_once 'store.php';
   include_once 'msg.php';
-//   include_once 'sendtoChanel.php';
   include_once 'defaultdata.php';
   include_once 'lib/binance.php';
   include('jdf.php');
-  $token='1060705772:AAHSpDm0SZf39bO0neRN1WYoY1DXQaySJuU';
-// $token='879924548:AAHyPLX87XQpiyH_Oc9ws1_xcg_PTtRbM_4';
+  $token='?';
   $telegram = new Telegram($token);
     $orderHow;
   ///////////////
@@ -28,20 +26,7 @@
   $update = file_get_contents('php://input');
   $old = file_get_contents('data/latesttime.txt');
   
-//   if($old ==0 ){
-//     $sw=true;
-//     file_put_contents('data/latesttime.txt',1);
-//   }
-//   else{
-//       $old++;
-//       if($old ==4)
-//         $old=0;
-//       file_put_contents('data/latesttime.txt',$old);
-//   }
   file_put_contents('bot.txt',$update);
-
-// if($sw){
-    
 
   if(isset($update[0]['update_id'])){
             
