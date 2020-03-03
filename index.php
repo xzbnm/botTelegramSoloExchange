@@ -51,8 +51,6 @@
     if($data =='/start'){
         delete($messageID); 
         sendMessages($chatID,text1(),$stepa);
-        // sendMessages('arzsolebot',text1(),$stepa);
-        // sendMessages('@aliarj98','heloo',$stepa);
          hel();
     }else
         if($data =='/startedit')
