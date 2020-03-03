@@ -1,7 +1,6 @@
 <?php
-   include 'index.php';
+  include 'index.php';
   include 'store.php';
-//   include 'lib/binance.php';
 
 ///// key creator
 function key1($text,$data){
